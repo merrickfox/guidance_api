@@ -68,7 +68,7 @@ def setup_model_data():
 
 
 
-    if "falcon" in shared.args.model.lower():
+    if shared.args.model is not None and "falcon" in shared.args.model.lower():
         data['eos_token']= None
         data['bos_token']= None
         if "instruct" in shared.args.model.lower():
