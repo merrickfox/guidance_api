@@ -218,7 +218,8 @@ class GuidanceGenerator:
         'max_new_tokens': args['max_tokens'],
         'do_sample': True,
         'temperature': temperature,
-        'top_p': args['top_p']
+        'top_p': args['top_p'],
+        'repetition_penalty_range': 0
         }
 
         print(body)
